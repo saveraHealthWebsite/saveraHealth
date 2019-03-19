@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="mobileStyles.css" media="(orientation:portrait)">
+    <link type="text/css" rel="stylesheet" href="styles.css" media="(orientation:landscape)">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+  <div id="topHeader">
+    <nav>
+      <img id="logo" src="images/logo.png" />
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">OUR SERVICES</a></li>
+        <li><a href="#advantage">SAVERA ADVANTAGE</a></li>
+        <li><a href="#partner">PARTNER SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div id="navMobile">
+      <img id="logo" src="images/logoColor.png" />
+      <div id="myLinks">
+        <a href="#about">ABOUT</a>
+        <a href="#services">OUR SERVICES</a>
+        <a href="#advantage">SAVERA ADVANTAGE</a>
+        <a href="#partner">PARTNER SERVICES</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <div id="splash">
+    </div>
+  </div>
+
+  <div id="bottomHeader">
+    <div id="nav">
+      <a href="#topHeader"><img id="icon" src="images/icon.png" /></a>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">OUR SERVICES</a></li>
+        <li><a href="#advantage">SAVERA ADVANTAGE</a></li>
+        <li><a href="#partner">PARTNER SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="grad"></div>
+
+  <main>
+
+    <div class="section" id="about">
+      <div class="content">
+        <h1>ABOUT SAVERA</h1>
+        <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. </p>
+      </div>
+    </div>
+
+    <div class="section grey" id="services">
+      <div class="content">
+        <h1>OUR SERVICES</h1>
+        <table>
+          <tr>
+            <th><img src="images/medicalCoding.png" /></th>
+            <td><h2>Medical Coding</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/medicalCodingAudit.png" /></th>
+            <td><h2>Medical Coding Audit</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/clinicalDocumentationImprovement.png" /></th>
+            <td><h2>Clinical Documentation Improvement</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/analytics.png" /></th>
+            <td><h2>Analytics</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/medicalBilling&ARManagement.png" /></th>
+            <td><h2>Medical Billing & AR Management</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/strategy&OperationsConsulting.png" /></th>
+            <td><h2>Strategy & Operations Consulting</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/M&ADueDiligence.png" /></th>
+            <td><h2>M&A Due Diligence</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+          <tr>
+            <th><img src="images/eScribing.png" /></th>
+            <td><h2>eScribing</h2>
+                <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p>
+                </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section" id="advantage">
+      <div class="content">
+        <h1>SAVERA ADVANTAGE</h1>
+        <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. </p>
+      </div>
+    </div>
+
+    <div class="section grey" id="partner">
+      <div class="content">
+        <h1>PARTNER SERVICES</h1>
+        <h2>Medical Records Sorting</h2>
+          <table class="partner">
+            <tr>
+              <td><p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p></td>
+            </tr>
+            <tr>
+              <td><p style="margin-top: 4px">Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p></td>
+            </tr>
+          </table>
+        <h2>Medical Transcription</h2>
+          <table class="partner">
+            <tr>
+              <td><p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p></td>
+            </tr>
+          </table>
+        <h2>Software Development</h2>
+          <table class="partner">
+            <tr>
+              <td><p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera.</p></td>
+            </tr>
+          </table>
+        <p>Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. Insert a little thing here to describe savera. </p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="content">
+        <h1>CONTACT US</h1>
+        <p><a href="mailto:ajit@saverahealth.org"><b>EMAIL:</b> ajit@saverahealth.org</a></p>
+        <p><a href="tel:+617-320-5389"><b>PHONE:</b> 617-320-5389</p></a> <br/>
+      </div>
+    </div>
+
+  </main>
+
+  </body>
+
+</html>
