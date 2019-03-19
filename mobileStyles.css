@@ -176,7 +176,8 @@ img#logo {
 
 #myLinks {
   display: none;
-  margin-top: 25px;
+  position: absolute;
+  top: 118px;
   padding-top: 60px;
   padding-bottom: 20px;
   width: 100%;
@@ -192,11 +193,20 @@ img#logo {
   margin-bottom: 40px;
 }
 
+a#logo {
+  margin: 0;
+  width: 280px;
+  height: 120px;
+}
+
 #navMobile a.icon {
   display: block;
   position: absolute;
-  right: 40px;
-  top: 40px;
+  padding-top: 38px;
+  right: 0;
+  top: 0px;
+  width: 120px;
+  height: 82px;
   color: RED;
 }
 
