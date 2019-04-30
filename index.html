@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+  <div id="nav">
+    <a href="#splash" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+    <div id="extended">
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#mission">MISSION</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#advantage">ADVANTAGE</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#projects">PROJECTS</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+  <div id="splash">
+    <div class="slide" id="one">
+    </div>
+  </div>
+
+  <main>
+
+    <div class="section" id="about">
+      <div class="content">
+        <h1>ABOUT SAVERA</h1>
+        <h3>Savera Health is a premier provider of sustainable, annuity business process extension solutions that enable client priorities and team extension agenda.</h3>
+        <ol>
+          <li>We enable sustainable change by delivering customizable revenue cycle management services that support our client’s unique financial and organizational needs.</li>
+          <li>We orchestrate the pairing of healthcare industry experts and highly experienced revenue cycle resources with leading-edge processes.</li>
+          <li>We bring forward a world-class, digital, paper-free production infrastructure. We complete work in the client’s native systems, and do not download or store any patient data in our systems.</li>
+          <li>We partner with hospitals and health systems, physician practices and related industry service organizations to provide a broad portfolio of customizable solutions, to deliver measurable, meaningful results, improve productivity and quality, and reduce cost of service.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section grey" id="mission">
+      <div class="content">
+        <h1>MISSION & VALUES</h1>
+        <h3>We share one mission: contributing to our client success and be their trusted partner.</h3>
+          <ol>
+            <li>We virtualize our client workflows by tightly integrating client processes, policies and protocols.</li>
+            <li>We strive for operational excellence and bring forward named, dedicated, experienced associates, who collaborate with our client teams.</li>
+          </ol>
+        <h3>We team with our clients: we are not an outsourcing organization, instead, we extend our client teams.</h3>
+          <ol>
+            <li>We virtualize our client workflows by tightly integrating client processes, policies and protocols.</li>
+            <li>We strive for operational excellence and bring forward named, dedicated, experienced associates, who collaborate with our client teams.</li>
+          </ol>
+        <h3>We strive for operational excellence and client confidence.</h3>
+          <ol>
+            <li>We bring forward a world-class, digital, paper-free production infrastructure.</li>
+            <li>We do not download or store patient data.</li>
+            <li>We complete work in client systems, and our work quality and productivity are fully transparent to our clients.</li>
+          </ol>
+        <h3>We endeavor to fail fast, learn faster and grow.</h3>
+          <ol>
+            <li>We deliver on our commitments, differentiate on performance, and exceed customer expectations.</li>
+            <li>We are inclusive, collaborative and selfless in seeking the best outcomes for our clients.</li>
+          </ol>
+        <h3>We believe in technology leverage and continued relevancy through constant dis-intermediation.</h3>
+          <ol>
+            <li>We collaborate with our clients and technology partners to share productivity, feature and automation gains (RPA, IPA, AI, ML, etc.).</li>
+            <li>We perform quarterly contract reviews and reset SLAs to constantly dis-intermediate our services — and refocus on energy on services that are of higher value to our clients — to keep us relevant.</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="section" id="services">
+      <div class="content">
+        <h1>SERVICES</h1>
+        <h2>Revenue Cycle Services</h2>
+        <h4>We design and implement – in collaboration with our clients- patient-centered solutions for sustained improvements in revenue cycle performance. Our comprehensive revenue cycle management services address key revenue cycle processes, with emphasis on:</h3>
+        <span><img src="images/frontCycle.png"/><h3>Front-Cycle</h3></span>
+          <ol>
+            <li>Insurance and Benefits Verification</li>
+            <li>Refferals and Authorization</li>
+            <li>Financial Clearance</li>
+            <li>Patient Engagement</li>
+            <li>Provider Enrollment & Credentialling</li>
+          </ol>
+
+        <span><img src="images/midCycle.png"/><h3>Mid-Cycle</h3></span>
+          <ol>
+            <li>Coding & Coding Audit</li>
+            <li>HCC Coding</li>
+            <li>Remote Clinical Documentation</li>
+            <li>Release of Information</li>
+            <li>Transcription</li>
+            <li>Medical Record Excerpts & Indexing</li>
+          </ol>
+        <span><img src="images/backCycle.png"><h3>Back-Cycle</h3></span>
+          <ol>
+            <li>Insurance and Self-Pay AR Follow Up</li>
+            <li>Denial Management</li>
+            <li>Credit Balance</li>
+          </ol>
+        <span><img src="images/patientOutreach.png"><h3>Patient Outreach</h3></span>
+        <span><img src="images/analytics.png"><h3>Analytics</h3></span>
+        <ol>
+          <li>Custom Reports & Extracts</li>
+          <li>Presentation using Tableau/ Qlik/ Other Solutions</li>
+        </ol>
+        <span><img src="images/revenueCycleWorkflowOptimization.png"><h3>Revenue Cycle Workflow Optimzation</h3></span>
+        <ol>
+          <li>Claims and Business Analytics Driven Based Revenue Cycle Workflow Support</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section grey" id="advantage">
+      <div class="content">
+        <h1>SAVERA ADVANTAGE</h1>
+        <h3>Premier Digital Production Facility</h3>
+          <ol>
+            <li>Our paper-free production facility- Doctus Data Services Private Limited in Hyderabad, India - is an ISO 27001:2013, SOC II Type II, HITRUST certified company.</li>
+          </ol>
+        <h3>Privacy & Security Peace of Mind</h3>
+          <ol>
+            <li>Our privacy and security measures and safeguards achieve compliance with HIPAA Legislation, PHI, PII and NIST guidelines, and protect sensitive information.</li>
+            <li>Patient data is neither downloaded nor stored.</li>
+          </ol>
+        <h3>Team Extension Efficacy</h3>
+          <ol>
+            <li>Our work is completed in client native systems - work quality and productivity are fully transparent to our clients.</li>
+          </ol>
+        <h3>Experienced, Dedicated, On-shore and Off-shore Associates</h3>
+          <ol>
+            <li>We only deploy experienced on-shore and off-shore associates - we neither employ apprentices, nor deploy “trained but inexperienced” associates.</li>
+          </ol>
+        <h3>SLA Based Annuity Client Partnership</h3>
+          <ol>
+            <li>We encourage quarterly contract performance review and SLA resets to share productivity and gains.</li>
+            <li>Our attractive pricing structure improves client cost structure.</li>
+          </ol>
+        <h3>Option to Monetize Investment</h3>
+          <ol>
+            <li>Our clients have option to acquire the Unit dedicated to their operations at pre-determined rate and milestones.</li>
+          </ol>
+        <h3>Comprehensive Healthcare Advisory Experience</h3>
+          <ol>
+            <li>Our associates bring to bear decades of healthcare advisory experience in the areas of revenue cycle process transformation and post-live system stabilization; payor-provider collaboration initiatives; global strategic sourcing; M&A due diligence and valuation/ cross-border transaction support; product management and marketing; business modeling and  go-to-market strategy development.</li>
+            <li>We also orchestrate deployment of clinical, technology and other revenue cycle subject-matter experts.</li>
+          </ol>
+        <h3>Business Partnerships with Best-in-KLAS® Organizations</h3>
+          <ol>
+            <li>We take pride in serving and retaining our Best-in KLAS® service and technology solution clients, and provider organization clients.</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="section" id="projects">
+      <div class="content">
+        <h1>PROJECTS</h1>
+        <h3>Physicians-Expert Coders Led Comprehensive Facility and Physician Coding & Coding Services</h3>
+          <ol>
+            <li>We coded 1M+ charts coded for 25 health systems and consistently achieved 95.5%+ coding accuracy rate and 97%+ DRG accuracy rate.</li>
+            <li>We are proficient with all leading HIT, HIM and surround solutions.</li>
+            <li>Our coders are all AHIMA/ AAPC certified, with 5-14 years coding experience; and with 12+ years coding audit experience.</li>
+          </ol>
+        <h3>Physicians-Expert Coders Led Remote CDI Services</h3>
+          <ol>
+            <li>We continue to perform coding and CDI Q&R for 3 clients.</li>
+          </ol>
+        <h3>Transcription</h3>
+          <ol>
+            <li>We transcribe 1.5M+ lines per month.</li>
+          </ol>
+        <h3>Medical Records Excerpts & Indexing</h3>
+          <ol>
+            <li>We summarize 2.5M+ pages per month and index 2.5M+ pages per month.</li>
+          </ol>
+        <h3>Physician RCM</h3>
+          <ol>
+            <li>We provide comprehensive back-office RCM support for 12 physicians.</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="content">
+        <h1>CONTACT US</h1>
+        <a href="mailto:ajit@saverahealth.org"><b style="font-weight: 500">EMAIL:</b> ajit@saverahealth.org</a><br/ style="line-height:1.5;">
+        <a href="tel:+1-617-320-5389"><b style="font-weight: 500">PHONE:</b> 617-320-5389</p></a>
+      </div>
+    </div>
+
+  </main>
+
+  </body>
+
+</html>
