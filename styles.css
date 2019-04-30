@@ -162,6 +162,16 @@ ol {
   font-size: 18px;
   margin: 0px;
   padding-left: 20px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+ol > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
 }
 
 ol li {
@@ -218,33 +228,6 @@ span {
   color: WHITE;
 }
 
-
-#projects ol, #advantage ol, #mission ol {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
-}
-
-#projects ol > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
-}
-
-#advantage ol > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
-}
-
-#mission ol > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
-}
 
 
 /*
