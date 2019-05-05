@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <div id="nav">
+      <a href="index.html" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+      <div id="extended">
+        <ul>
+          <li><a href="mission+Values.html">MISSION & VALUES</a></li>
+          <li><a href="businessModel.html">BUSINESS MODEL</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="advantage.html">ADVANTAGE</a></li>
+          <li><a href="outcomes.html">OUTCOMES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#outcomes">OUTCOMES</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+
+  <main>
+
+    <div class="section" id="services">
+      <div class="content">
+        <h1>SERVICES</h1>
+        <h2>Revenue Cycle Services</h2>
+        <h4>We design and implement – in collaboration with our clients- patient-centered solutions for sustained improvements in revenue cycle performance. Our comprehensive revenue cycle management services address key revenue cycle processes, with emphasis on:</h3>
+        <span><img src="images/frontCycle.png"/><h3>Front-Cycle</h3></span>
+          <ol>
+            <li>Insurance and Benefits Verification</li>
+            <li>Referals and Authorization</li>
+            <li>Financial Clearance</li>
+            <li>Patient Engagement</li>
+            <li>Provider Enrollment &amp; Credentialing</li>
+          </ol>
+
+        <span><img src="images/midCycle.png"/><h3>Mid-Cycle</h3></span>
+          <ol>
+            <li>Coding &amp; Coding Audit</li>
+            <li>HCC Coding</li>
+            <li>Remote Clinical Documentation</li>
+            <li>Release of Information</li>
+            <li>Transcription</li>
+            <li>Medical Record Excerpts &amp; Indexing</li>
+          </ol>
+        <span><img src="images/backCycle.png"><h3>Back-Cycle</h3></span>
+          <ol>
+            <li>Insurance and Self-Pay AR Follow Up</li>
+            <li>Denial Management</li>
+            <li>Credit Balance</li>
+          </ol>
+        <span><img src="images/analytics.png"><h3>Analytics</h3></span>
+        <ol>
+          <li>Custom Reports &amp; Extracts</li>
+          <li>Presentation using Tableau/ Qlik/ Other Solutions</li>
+        </ol>
+        <span><img src="images/revenueCycleWorkflowOptimization.png"><h3>Revenue Cycle Workflow Optimzation</h3></span>
+        <ol>
+          <li>Claims and Business Analytics Driven Based Revenue Cycle Workflow Support</li>
+        </ol><br/>
+
+        <h2>Advisory Services</h2>
+          <h4>We orchestrate the pairing of healthcare industry experts and highly experienced revenue cycle resources with leading-edge practices and processes:</h4>
+          <ol>
+            <li>Revenue Cycle Process Transformation</li>
+            <li>Revenue Cycle System Stabilization</li>
+            <li>Global Strategic Sourcing</li>
+            <li>Payor-Provider Collaboration Initiatives</li>
+            <li>M&amp;A Due Diligence</li>
+            <li>M&amp;A Valuation/ Cross-border Transaction</li>
+            <li>Business Modeling &amp; Go-to-Market Strategy</li>
+          </ol>
+      </div>
+    </div>
+
+    <!--<div class="section" id="values">
+      <div class="content">
+        <h1>VALUES</h1>
+        <h3>We value: Collaboration, Integrity, Service Excellence, Outcomes, Ownership, Adaptability, and Entrepreneurial Spirit</h3>
+      </div>
+    </div>-->
+
+  </main>
+
+  </body>
+
+</html>

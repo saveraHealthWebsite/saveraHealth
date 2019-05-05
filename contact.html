@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <div id="nav">
+      <a href="index.html" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+      <div id="extended">
+        <ul>
+          <li><a href="mission+Values.html">MISSION & VALUES</a></li>
+          <li><a href="businessModel.html">BUSINESS MODEL</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="advantage.html">ADVANTAGE</a></li>
+          <li><a href="outcomes.html">OUTCOMES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#outcomes">OUTCOMES</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+
+  <main>
+
+    <div class="section" id="mission">
+      <div class="content">
+        <h1>CONTACT US</h1>
+        <h3>If you have any questions, please contact Ajit Sett (Chief Client Officer) who can be reached here:</h3>
+          <ol>
+            <li>Email: <a href="mailto:ajit@saverahealth.org">ajit@saverahealth.org</a></li>
+            <li>Phone: <a href="tel:+1-617-320-5389">(617) 320-5389</a></li>
+            <li>Linkedin: <a href="http://linkedin.com" target="_blank">linkedin.com</a></li>
+          </ol>
+      </div>
+    </div>
+
+  </main>
+
+  </body>
+
+</html>

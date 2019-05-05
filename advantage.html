@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <div id="nav">
+      <a href="index.html" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+      <div id="extended">
+        <ul>
+          <li><a href="mission+Values.html">MISSION & VALUES</a></li>
+          <li><a href="businessModel.html">BUSINESS MODEL</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="advantage.html">ADVANTAGE</a></li>
+          <li><a href="outcomes.html">OUTCOMES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#outcomes">OUTCOMES</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+
+  <main>
+
+    <div class="section" id="advantage">
+      <div class="content">
+        <h1>SAVERA ADVANTAGE</h1>
+        <h3>Premier Digital Production Facility</h3>
+          <ol>
+            <li>Doctus Data Services Private Limited in Hyderabad, India - is an ISO 27001:2013, SOC II Type II, HITRUST certified company.</li>
+          </ol>
+        <h3>Privacy &amp; Security Peace of Mind</h3>
+          <ol>
+            <li>Our privacy and security measures and safeguards achieve compliance with HIPAA Legislation, PHI, PII and NIST guidelines, and protect sensitive information.</li>
+            <li>Patient data is neither downloaded nor stored.</li>
+          </ol>
+        <h3>Team Extension Efficacy</h3>
+          <ol>
+            <li>Our work is completed in client native systems - work quality and productivity are fully transparent to our clients.</li>
+          </ol>
+        <h3>Experienced, Dedicated, On-shore and Off-shore Associates</h3>
+          <ol>
+            <li>We only deploy experienced on-shore and off-shore associates - we neither employ apprentices, nor deploy “trained but inexperienced” associates.</li>
+          </ol>
+        <h3>SLA Based Annuity Client Partnership</h3>
+          <ol>
+            <li>We encourage quarterly contract performance review and SLA resets to share productivity and gains.</li>
+            <li>Our attractive pricing structure improves client cost structure.</li>
+          </ol>
+        <h3>Option to Monetize Investment</h3>
+          <ol>
+            <li>Our clients have option to acquire the Unit dedicated to their operations at pre-determined rate and milestones.</li>
+          </ol>
+        <h3>Comprehensive Healthcare Advisory Experience</h3>
+          <ol>
+            <li>We bring to bear decades of healthcare advisory experience in the areas of revenue cycle process transformation and post-live system stabilization; payor-provider collaboration initiatives; global strategic sourcing; M&amp;A due diligence and valuation/ cross-border transaction support; product management and marketing; business modeling and go-to-market strategy development.</li>
+            <li>We also orchestrate deployment of clinical, technology and other revenue cycle subject-matter experts.</li>
+          </ol>
+      </div>
+    </div>
+
+    <!--<div class="section" id="values">
+      <div class="content">
+        <h1>VALUES</h1>
+        <h3>We value: Collaboration, Integrity, Service Excellence, Outcomes, Ownership, Adaptability, and Entrepreneurial Spirit</h3>
+      </div>
+    </div>-->
+
+  </main>
+
+  </body>
+
+</html>

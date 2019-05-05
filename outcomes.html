@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <div id="nav">
+      <a href="index.html" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+      <div id="extended">
+        <ul>
+          <li><a href="mission+Values.html">MISSION & VALUES</a></li>
+          <li><a href="businessModel.html">BUSINESS MODEL</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="advantage.html">ADVANTAGE</a></li>
+          <li><a href="outcomes.html">OUTCOMES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#outcomes">OUTCOMES</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+
+  <main>
+
+    <div class="section" id="outcomes">
+      <div class="content">
+        <h1>OUTCOMES & QUALIFICATIONS</h1>
+        <h3>Physicians-Expert Coders Led Comprehensive Facility and Physician Coding &amp; Coding Services</h3>
+          <ol>
+            <li>We coded 1M+ charts coded for 25 health systems and consistently achieved 95.5%+ coding accuracy rate and 97%+ DRG accuracy rate.</li>
+            <li>We are proficient with all leading HIT, HIM and surround solutions.</li>
+            <li>Our coders are all AHIMA/ AAPC certified, with 5-14 years coding experience; and with 12+ years coding audit experience.</li>
+          </ol>
+        <h3>Physicians-Expert Coders Led Remote CDI Services</h3>
+          <ol>
+            <li>We continue to perform coding and CDI Q&amp;R for 3 clients.</li>
+          </ol>
+        <h3>Transcription</h3>
+          <ol>
+            <li>We transcribe 1.5M+ lines per month.</li>
+          </ol>
+        <h3>Medical Records Excerpts &amp; Indexing</h3>
+          <ol>
+            <li>We summarize 2.5M+ pages per month and index 2.5M+ pages per month.</li>
+          </ol>
+        <h3>Physician RCM</h3>
+          <ol>
+            <li>We provide comprehensive back-office RCM support for 12 physicians.</li>
+          </ol>
+      </div>
+    </div>
+
+    <!--<div class="section" id="values">
+      <div class="content">
+        <h1>VALUES</h1>
+        <h3>We value: Collaboration, Integrity, Service Excellence, Outcomes, Ownership, Adaptability, and Entrepreneurial Spirit</h3>
+      </div>
+    </div>-->
+
+  </main>
+
+  </body>
+
+</html>

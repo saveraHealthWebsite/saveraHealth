@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savera Health</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("collapsed");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <div id="nav">
+      <a href="index.html" id="logo" style="text-align: left"><img id="logo" src="images/logoColor.png"/></a>
+      <div id="extended">
+        <ul>
+          <li><a href="mission+Values.html">MISSION & VALUES</a></li>
+          <li><a href="businessModel.html">BUSINESS MODEL</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="advantage.html">ADVANTAGE</a></li>
+          <li><a href="outcomes.html">OUTCOMES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="collapsed">
+      <a href="#about">ABOUT</a><br/>
+      <a href="#mission">MISSION</a><br/>
+      <a href="#services">SERVICES</a><br/>
+      <a href="#advantage">ADVANTAGE</a><br/>
+      <a href="#outcomes">OUTCOMES</a><br/>
+      <a href="#contact">CONTACT</a><br/>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+  <div id="grad"></div>
+
+
+  <main>
+
+    <div class="section" id="businessModel">
+      <div class="content">
+        <h1>BUSINESS MODEL</h1>
+        <h3>We team with our clients: we are not an outsourcing organization, instead, we extend our client teams.</h3>
+          <ol>
+            <li>We virtualize our client workflows by tightly integrating client processes, policies and protocols.</li>
+            <li>We strive for operational excellence and bring forward named, dedicated, experienced associates, who collaborate with our client teams.</li>
+          </ol>
+        <h3>We strive for operational excellence and client confidence.</h3>
+          <ol>
+            <li>We bring forward a world-class, digital, paper-free production infrastructure.</li>
+            <li>We do not download or store patient data.</li>
+            <li>We complete work in client systems, and our work quality and productivity are fully transparent to our clients.</li>
+          </ol>
+        <h3>We endeavor to fail fast, learn faster and grow.</h3>
+          <ol>
+            <li>We deliver on our commitments, differentiate on performance, and exceed customer expectations.</li>
+            <li>We are inclusive, collaborative and selfless in seeking the best outcomes for our clients.</li>
+          </ol>
+        <h3>We believe in technology leverage and continued relevancy through constant dis-intermediation.</h3>
+          <ol>
+            <li>We collaborate with our clients and technology partners to share productivity, feature and automation gains (RPA, IPA, AI, ML, etc.).</li>
+            <li>We perform quarterly contract reviews and reset SLAs to constantly dis-intermediate our services — and refocus on energy on services that are of higher value to our clients — to keep us relevant.</li>
+      </div>
+    </div>
+
+    <!--<div class="section" id="values">
+      <div class="content">
+        <h1>VALUES</h1>
+        <h3>We value: Collaboration, Integrity, Service Excellence, Outcomes, Ownership, Adaptability, and Entrepreneurial Spirit</h3>
+      </div>
+    </div>-->
+
+  </main>
+
+  </body>
+
+</html>

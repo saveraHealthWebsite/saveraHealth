@@ -4,26 +4,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Rubik;
-}
-
-
-/* CONDITIONALS */
-
-@media (max-width: 699px) {
-
-div#extended {
-  display: none;
-}
-
-}
-
-@media (min-width: 700px) {
-
-div#collapsed, a.icon {
-  display: none;
-}
-
+  font-family: Roboto;
 }
 
 
@@ -78,12 +59,6 @@ div#grad {
   z-index: 1;
 }
 
-div#splash {
-  height: 100vh;
-  min-height: 100%;
-  background-color: RED;
-}
-
 div#collapsed {
   display: none;
   position: absolute;
@@ -121,6 +96,7 @@ main {
   width: 100%;
   height: auto;
   margin: auto;
+  padding-top: 136px;
 }
 
 div.section {
@@ -130,12 +106,19 @@ div.section {
 }
 
 div.content {
-  padding: 76px 0% 76px 0%;
-  /*padding: 84px 0px 84px 0px;*/
+  padding: 0px 0% 76px 0%;
   margin: auto;
   width: 85%;
-  max-width: 900px;
+  max-width: 700px;
   color: #4d4d4d;
+}
+
+div#splash {
+    background-image: url(images/sunrise.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  text-align: center;
 }
 
 div.grey {
@@ -147,6 +130,7 @@ h1 {
   font-size: 36px;
   margin: 0;
   margin-bottom: 28px;
+  font-weight: 900;
 }
 
 h3 {
@@ -179,11 +163,20 @@ ol li {
   padding-left: 4px;
 }
 
+p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
 h4 {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
   margin-top: -10px;
+}
+
+h2 {
+  margin-top: 20px;
 }
 
 #services img {
@@ -200,10 +193,6 @@ h4 {
 
 #services h3 {
   margin: 0;
-}
-
-#services ol {
-
 }
 
 span {
@@ -228,207 +217,52 @@ span {
   color: WHITE;
 }
 
-
-
-/*
-
-html {
-  display: block;
-}
-
-body {
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-div#navMobile {
-  display: none;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  float: right;
-  padding-right: 2%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  font-family: Rubik;
-  color: #f9f9f9;
-  font-weight: 500;
-  text-align: right;
-  margin-left: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li a:hover {
-    color: #cccccc;
-}
-
-div#bottomHeader {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  background-color: WHITE;
-}
-
-div#nav {
-  height: 60px;
-  margin: auto;
-}
-
-img#logo {
-  position: absolute;
-  height: 30px;
-  margin-top: 15px;
-  margin-left: 2%;
-}
-
-#bottomHeader li a {
-  color: #a3a3a3;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 22px;
-}
-
-#bottomHeader li a:hover {
-  color: #d3d3d3;
-}
-
-div#grad {
-  background-image: linear-gradient(to bottom, rgb(200, 200, 200, 25%), rgb(0, 0, 0, 0%));
-  width: 100%;
-  height: 8px;
-  position: fixed;
-  top: 60px;
-  z-index: 1;
-}
-
-div#splash {
-  height: 100vh;
-  background-color: RED;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  font-family: Rubik;
-}
-
-div.section {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-div.content {
-  padding: 10% 0% 10% 0%;
-  margin: auto;
-  width: 800px;
-  max-width: 80%;
-}
-
-div.grey {
-  background-color: #f9f9f9;
-}
-
-div#about {
-  margin-top: 60px;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 3.5em;
-  color: RED;
-  margin: 0;
-  margin-bottom: 28px;
-}
-
-p {
-  font-size: 28px;
-  color: #4d4d4d;
-  margin: 0;
-  margin-top: 8px;
-}
-
-b {
-  font-weight: 500;
-}
-
 table {
-  width: 100%;
-}
-
-tr {
-  height: 120px;
-}
-
-th {
-  width: 80px;
-}
-
-th img {
-  width: 100%;
+  display: block;
+  margin-top: -36px;
+  margin-left: -4px;
 }
 
 td {
-  vertical-align: middle;
-  padding-left: 24px;
+  min-width: 200px;
+  padding-right: 10px;
+  vertical-align: top;
 }
 
-td p {
-  font-size: 18px;
+td h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 
-h2 {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 500;
-  color: #4d4d4d;
+td a {
+  text-decoration: none;
 }
 
-#partner table {
-  margin-top: 8px;
-  margin-left: 18px;
-  margin-bottom: 24px;
-  border-collapse: collapse;
+td a:hover {
+  text-decoration: underline;
+  text-decoration-color: RED;
 }
 
-#partner tr {
-  height: auto;
+
+/* CONDITIONALS */
+
+@media (max-width: 799px) {
+
+div#extended {
+  display: none;
 }
 
-#partner td {
-  border-left: solid #4d4d4d 2px;
-  height: auto;
-  padding-left: 12px;
+td {
+  display: inline-block;
 }
 
-#partner p {
-  margin: 0;
-  font-size: 18px;
 }
 
-div#contact {
-  background-color: #aa0000;
-  text-align: center;
+@media (min-width: 800px) {
+
+div#collapsed, a.icon {
+  display: none;
 }
 
-#contact h1, #contact p {
-  color: WHITE;
+
 }
