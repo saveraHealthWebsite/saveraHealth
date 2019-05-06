@@ -64,7 +64,8 @@ div#collapsed {
   display: none;
   position: absolute;
   text-align: center;
-  margin-top: 10px;
+  top: 0;
+  margin-top: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
