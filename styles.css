@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Roboto;
+  font-family: Yantramanav;
 }
 
 
@@ -16,6 +16,7 @@ div#nav {
   position: fixed;
   z-index: 2;
   background-color: WHITE;
+  top: 0;
 }
 
 img#logo {
@@ -109,8 +110,9 @@ div.content {
   padding: 0px 0% 76px 0%;
   margin: auto;
   width: 85%;
-  max-width: 700px;
+  max-width: 900px;
   color: #4d4d4d;
+  line-height: 1.1;
 }
 
 div#splash {
@@ -130,12 +132,13 @@ h1 {
   font-size: 36px;
   margin: 0;
   margin-bottom: 28px;
-  font-weight: 900;
+  font-weight: 700;
+  font-family: Rubik;
 }
 
 h3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   margin-top: 24px;
   font-weight: 500;
@@ -149,6 +152,7 @@ ol {
   list-style: none;
   margin-left: 0;
   padding-left: 1em;
+  font-weight: 400;
 }
 
 ol > li:before {
@@ -173,6 +177,7 @@ h4 {
   font-style: italic;
   font-size: 18px;
   margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -184,7 +189,6 @@ h2 {
   float: left;
   bottom: 0;
   width: 16px;
-  margin-top: 2px;
   margin-left: -1px;
   margin-right: 8px;
   vertical-align: text-bottom;
@@ -193,6 +197,15 @@ h2 {
 
 #services h3 {
   margin: 0;
+}
+
+#services table {
+  margin-top: -20px;
+}
+
+#services td {
+  width: 450px;
+  vertical-align: top;
 }
 
 span {
@@ -217,52 +230,98 @@ span {
   color: WHITE;
 }
 
-table {
-  display: block;
+#table table {
   margin-top: -36px;
-  margin-left: -4px;
+  margin-left: -20px;
+  margin-right: -20px;
+  vertical-align: middle;
+  border-spacing: 20px;
 }
 
-td {
-  min-width: 200px;
-  padding-right: 10px;
-  vertical-align: top;
+#table tbody {
+  border: solid 4px RED;
 }
 
-td h1 {
+#table tr {
   font-size: 20px;
-  margin-bottom: 16px;
+  font-weight: 500;
+  margin: 0;
 }
 
-td a {
+#table td {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: solid 2px RED;
+  padding: 1%;
+}
+
+#table td h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#table td a {
   text-decoration: none;
 }
 
-td a:hover {
+#table td a:hover {
   text-decoration: underline;
   text-decoration-color: RED;
 }
 
 
+
 /* CONDITIONALS */
 
-@media (max-width: 799px) {
+@media (max-width: 899px) {
 
-div#extended {
-  display: none;
+  div#extended {
+    display: none;
+  }
+
+  #table td h1 {
+    font-size: 16px;
+  }
+
+  #services td {
+    display: inline-block;
+    width: inherit;
+  }
+
+  #services img {
+    display: none;
+  }
+
 }
 
-td {
-  display: inline-block;
-}
+@media (max-width: 449px) {
+
+  #table table {
+    border-spacing: 0;
+    margin-left: 0;
+    margin-bottom: -5%;
+  }
+
+  #table td {
+    display: inline-block;
+    width: 82.5%;
+    padding: 5%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  #table td h1 {
+    font-size: 20px;
+  }
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
-div#collapsed, a.icon {
-  display: none;
-}
-
+  div#collapsed, a.icon {
+    display: none;
+  }
 
 }
